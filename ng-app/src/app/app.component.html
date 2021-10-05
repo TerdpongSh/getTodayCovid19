@@ -1,0 +1,35 @@
+<div class="labs-covid-19_pageContainer__1La6a">
+  <div class="labs-covid-19_pageBody__2cuqD">
+    <div class="CovidStat_covidStat__3s05d">
+      <div class="CovidStat_title__2T4n3">
+        <div class="Hero_Hero__2__2XUfZ">จำนวนผู้ติดเชื้อ</div>
+        <div class="Hero_Hero__2__2XUfZ CovidStat_covid__2VAwB">COVID-19</div>
+        <div class="Hero_Hero__2__2XUfZ">ในประเทศไทย</div>
+      </div>
+      <div class="CovidStat_space__1oGy1"></div>
+      <div class="CovidStat_dataContainer__3lRGc">
+        <div class="CovidStat_data1__2lXNo">
+          <div class="Hero_Hero__4__1ZYNC CovidStat_header__3zAMI">ติดเชื้อสะสม</div>
+          <div class="Hero_Hero__2__2XUfZ CovidStat_value__1PM9a">{{ Confirmed | number }}</div>
+          <div class="Hero_Hero__4__1ZYNC CovidStat_detail__2KMOe">({{signNC}}{{ NewConfirmed | number }})</div>
+        </div>
+        <div class="CovidStat_data2__1gnM4">
+          <div class="Headline_Headline__2__1OURn CovidStat_header__3zAMI">หายแล้ว</div>
+          <div class="Hero_Hero__3__2Y7Uh CovidStat_value__1PM9a">{{ Recovered | number }}</div>
+          <div class="Headline_Headline__1__1_xuB CovidStat_detail__2KMOe">({{signNC}}{{ NewRecovered | number }})</div>
+        </div>
+        <div class="CovidStat_data3__2YLRh">
+          <div class="Headline_Headline__2__1OURn CovidStat_header__3zAMI">รักษาอยู่ใน รพ.</div>
+          <div class="Hero_Hero__3__2Y7Uh CovidStat_value__1PM9a">{{ Hospitalized | number }}</div>
+          <div class="Headline_Headline__1__1_xuB CovidStat_detail__2KMOe">({{signNC}}{{ NewHospitalized | number }})</div>
+        </div>
+        <div class="CovidStat_data4__1vOc1">
+          <div class="Headline_Headline__2__1OURn CovidStat_header__3zAMI">เสียชีวิต</div>
+          <div class="Hero_Hero__3__2Y7Uh CovidStat_value__1PM9a">{{ Deaths | number }}</div>
+          <div class="Headline_Headline__1__1_xuB CovidStat_detail__2KMOe">({{signNC}}{{ NewDeaths | number }})</div>
+        </div>
+      </div>
+    </div>
+    <div class="Body_Body__7___bzv5 CovidStat_updatedAt__3gUDq">อัปเดตข้อมูลล่าสุด : {{ UpdateDate }}</div>
+  </div>
+</div>
